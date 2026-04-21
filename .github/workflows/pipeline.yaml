@@ -16,6 +16,7 @@ jobs:
 
     - name: Run backend tests
       run: |
+        cd backend
         pip install -r requirements.txt pytest httpx
         pytest test_main.py -v
 
